@@ -10,26 +10,21 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 ## Version
 
-|     #     | Version        |
-|-----------|----------------|
-| Alpine    | 3.4            |
+| #      | Version |
+|--------|---------|
+| Alpine | 3.4     |
 
 ## Volumes
 
-The following directories are marked as volumes:
-* **`/etc/supervisor.d`**
+**`/etc/supervisor.d`**
 
 ### How-To
 
-#### Building Alpine Supervisor Docker Image
-
-To build an **Alpine Supervisor** Docker image from scratch, issue the following command:
+#### Building Docker Image
 
 `docker build . -t <tag>`
 
-#### Running Alpine Supervisor Docker Image
-
-To run the **Alpine Supervisor** Docker image, use the following commands:
+#### Running Docker Image
 
 * Pulling from **Dockerhub**:  
   `docker run -it scalified/alpine-supervisor /bin/sh`
