@@ -6,7 +6,7 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 ## Dockerhub
 
-`docker pull scalified/alpine-supervisor`
+**`docker pull scalified/alpine-supervisor`**
 
 ## Version
 
