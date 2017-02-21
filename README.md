@@ -1,5 +1,9 @@
 # Alpine Supervisor Docker #
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/scalified/alpine-supervisor.svg)](https://hub.docker.com/r/scalified/alpine-supervisor)
+[![](https://images.microbadger.com/badges/image/scalified/alpine-supervisor.svg)](https://microbadger.com/images/scalified/alpine-supervisor)
+[![](https://images.microbadger.com/badges/version/scalified/alpine-supervisor.svg)](https://microbadger.com/images/scalified/alpine-supervisor)
+
 ## Description
 
 This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Supervisor**](http://supervisord.org) running on [**Alpine Linux**](https://alpinelinux.org/)
