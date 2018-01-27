@@ -30,7 +30,7 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 #### Running Docker Image
 
-* Pulling from **Dockerhub**:  
+* Pulling from **Dockerhub** and launching:  
   `docker run -it scalified/alpine-supervisor /bin/sh`
 
 * Launching the built image with <tag> tag:  
@@ -40,4 +40,4 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 * [Scalified](http://www.scalified.com)
 * [Scalified Official Facebook Page](https://www.facebook.com/scalified)
-* <a href="mailto:info@scalified.com?subject=[Squash TM Docker Image]: Proposals And Suggestions">Scalified Support</a>
+* <a href="mailto:info@scalified.com?subject=[Alpine Supervisor Docker Image]: Proposals And Suggestions">Scalified Support</a>
