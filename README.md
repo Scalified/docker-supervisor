@@ -14,11 +14,10 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 ## Version
 
-| Tag    | Alpine Version |
-|--------|----------------|
-| latest | 3.9            |
-| 3.9    | 3.9            |
-| 3.4    | 3.4            |
+| Tag         | Alpine Version |
+|-------------|----------------|
+| latest, 3.9 | 3.9            |
+| 3.4         | 3.4            |
 
 ## Volumes
 
