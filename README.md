@@ -14,10 +14,11 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 ## Version
 
-| Tag         | Alpine Version |
-|-------------|----------------|
-| latest, 3.9 | 3.9            |
-| 3.4         | 3.4            |
+| Tag            | Alpine Version |
+|----------------|----------------|
+| latest, 3.18.2 | 3.18.2         |
+| 3.9            | 3.9            |
+| 3.4            | 3.4            |
 
 ## Volumes
 
@@ -27,7 +28,7 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 #### Building Docker Image
 
-`docker build . -t <tag>`
+`docker build . -t scalified/alpine-supervisor:<tag>`
 
 #### Running Docker Image
 

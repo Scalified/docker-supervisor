@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.18.2
 
 ENV SUPERVISOR_CONF_DIR=/etc/supervisor.d
 
