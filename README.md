@@ -16,7 +16,8 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 | Tag            | Alpine Version |
 |----------------|----------------|
-| latest, 3.18.2 | 3.18.2         |
+| latest, 3.20.0 | 3.20.0         |
+| 3.18.2         | 3.18.2         |
 | 3.9            | 3.9            |
 | 3.4            | 3.4            |
 
@@ -43,3 +44,4 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 * [Scalified](http://www.scalified.com)
 * [Scalified Official Facebook Page](https://www.facebook.com/scalified)
 * <a href="mailto:info@scalified.com?subject=[Alpine Supervisor Docker Image]: Proposals And Suggestions">Scalified Support</a>
+
