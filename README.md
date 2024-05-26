@@ -1,25 +1,14 @@
-# Alpine Supervisor Docker #
+# Docker Supervisor
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/scalified/alpine-supervisor.svg)](https://hub.docker.com/r/scalified/alpine-supervisor)
-[![](https://images.microbadger.com/badges/image/scalified/alpine-supervisor.svg)](https://microbadger.com/images/scalified/alpine-supervisor)
-[![](https://images.microbadger.com/badges/version/scalified/alpine-supervisor.svg)](https://microbadger.com/images/scalified/alpine-supervisor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/scalified/supervisor.svg)](https://hub.docker.com/r/scalified/supervisor)
 
 ## Description
 
-This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Supervisor**](http://supervisord.org) running on [**Alpine Linux**](https://alpinelinux.org/)
+This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Supervisor**](http://supervisord.org)
 
 ## Dockerhub
 
-**`docker pull scalified/alpine-supervisor`**
-
-## Version
-
-| Tag            | Alpine Version |
-|----------------|----------------|
-| latest, 3.20.0 | 3.20.0         |
-| 3.18.2         | 3.18.2         |
-| 3.9            | 3.9            |
-| 3.4            | 3.4            |
+**`docker pull scalified/supervisor`**
 
 ## Volumes
 
@@ -29,12 +18,12 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 #### Building Docker Image
 
-`docker build . -t scalified/alpine-supervisor:<tag>`
+`docker build . -t scalified/supervisor:<tag>`
 
 #### Running Docker Image
 
 * Pulling from **Dockerhub** and launching:  
-  `docker run -it scalified/alpine-supervisor /bin/sh`
+  `docker run -it scalified/supervisor /bin/sh`
 
 * Launching the built image with <tag> tag:  
   `docker run -it <tag> /bin/sh`

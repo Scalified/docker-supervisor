@@ -1,4 +1,6 @@
-FROM alpine:3.20.0
+ARG ALPINE_VERSION=latest
+
+FROM alpine:${ALPINE_VERSION}
 
 ENV SUPERVISOR_CONF_DIR=/etc/supervisor.d
 
