@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+INIT_DIR="${INIT_DIR:-/init.d}"
+
+if [ -d "$INIT_DIR" ]; then
+    echo "INFO '$INIT_DIR' directory found. Running initialization scripts..." | ts-pipe
+    for script in "$INIT_DIR"/*; do
+        if [ -f "$script" ]; then
+            echo "INFO Running '$script' script" | ts-pipe
+            . "$script" | ts-pipe
+        fi
+    done
+fi
+
+exec supervisord -c "$SUPERVISOR_CONF_FILE"
+

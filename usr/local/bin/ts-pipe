@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import sys
+import datetime
+
+for line in sys.stdin:
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S,%f')[:-3]
+    print(f"{now} {line.strip()}", flush=True)
+

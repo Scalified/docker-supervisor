@@ -1,32 +1,29 @@
-# Docker Supervisor
+# Supervisor Docker Image
 
+[![Release](https://img.shields.io/github/v/release/Scalified/docker-supervisor?style=flat-square)](https://github.com/Scalified/docker-supervisor/releases/latest)
 [![Docker Pulls](https://img.shields.io/docker/pulls/scalified/supervisor.svg)](https://hub.docker.com/r/scalified/supervisor)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Scalified/docker-supervisor/blob/master/LICENSE)
 
-## Description
+## Overview
 
-This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Supervisor**](http://supervisord.org)
+[**Alpine**](https://www.alpinelinux.org/) [**Docker**](https://www.docker.com/) image running [**Supervisor: Process Control System**](http://supervisord.org)
 
-## Dockerhub
+## Usage
 
-**`docker pull scalified/supervisor`**
+```bash
+docker run \
+    --name supervisor \
+    -e INIT_DIR=/init.d \
+    -v ./init:/init.d:ro \
+    -v supervisor-app.ini:/etc/supervisor.d/supervisor-app.ini:ro \
+    --detach \
+    --restart always \
+    scalified/supervisor
+```
 
-## Volumes
-
-**`/etc/supervisor.d`**
-
-### How-To
-
-#### Building Docker Image
-
-`docker build . -t scalified/supervisor:<tag>`
-
-#### Running Docker Image
-
-* Pulling from **Dockerhub** and launching:  
-  `docker run -it scalified/supervisor /bin/sh`
-
-* Launching the built image with <tag> tag:  
-  `docker run -it <tag> /bin/sh`
+| Environment Variable | Description                                                                                          | Default Value |
+|:--------------------:|------------------------------------------------------------------------------------------------------|---------------|
+| `INIT_DIR`           | Specifies the directory containing initialization scripts to be executed before `supervisord` starts | `/init.d`     |
 
 ## Scalified Links
 
