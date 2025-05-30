@@ -22,7 +22,7 @@ docker run \
 ```
 
 | Environment Variable | Description                                                                                          | Default Value |
-|:--------------------:|------------------------------------------------------------------------------------------------------|---------------|
+|----------------------|------------------------------------------------------------------------------------------------------|---------------|
 | `INIT_DIR`           | Specifies the directory containing initialization scripts to be executed before `supervisord` starts | `/init.d`     |
 
 ## Scalified Links
