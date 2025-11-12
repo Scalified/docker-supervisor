@@ -15,4 +15,3 @@ if [ -d "$INIT_DIR" ]; then
 fi
 
 exec supervisord -c "$SUPERVISOR_CONF_FILE"
-
