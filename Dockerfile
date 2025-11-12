@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine
 
 LABEL maintainer="Scalified <scalified@gmail.com>"
 
@@ -10,10 +10,8 @@ RUN echo "SUPERVISOR VERSION: $(supervisord -v)"
 
 RUN mkdir -p $SUPERVISOR_CONF_DIR
 
-COPY usr/ /usr/
-COPY etc/ /etc/
+COPY rootfs /
 
 VOLUME $SUPERVISOR_CONF_DIR
 
-ENTRYPOINT entrypoint
-
+ENTRYPOINT ["/usr/local/bin/entrypoint"]
